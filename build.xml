@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="UOFS_NALP_Controller" default="help">
+<project name="DailySurveyController" default="help">
 
     <!-- The local.properties file is created and updated by the 'android' tool.
          It contains the path to the SDK. It should *NOT* be checked into
@@ -141,6 +141,9 @@
         </if>
     </target>
 
+    <!-- The following tag includes Ethica's API library.
+            This library will be available at runtime through Ethica main app,
+            so right now it's provided for the compilation of the context analyzer -->
     <target name="-pre-compile" >
         <path id="tmp">
             <pathelement path="${toString:tested.project.classpath}"/>
